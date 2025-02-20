@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram layout</title>
+    <script src="https://kit.fontawesome.com/87ffa05237.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+            <div class="d-flex ms-auto">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#modal-1">
+                    Create a new post
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid p-2">
+        <ul class="nav nav-pills justify-content-center" id="viewToggle">
+            <li class="nav-item">
+                <button class="nav-link active" id="grid-view-tab" data-bs-toggle="tab" data-bs-target="#grid-view" type="button">
+                    <i class="fa-solid fa-table-cells"></i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="list-view-tab" data-bs-toggle="tab" data-bs-target="#list-view" type="button">
+                    <i class="fa-solid fa-square"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content mt-3" id="myTabContent">
+        <div class="tab-pane fade show active" id="grid-view">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://plus.unsplash.com/premium_photo-1736165168647-e216dcd23720?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1739536176048-caa7190dba66?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1739793669641-e5f4eddf6eab?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1739911636351-d1a19684de06?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8I" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1739971600548-3360ae4b4c7a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1739808606892-daa42d2f8b35?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1734639430017-5756ea7fec63?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://plus.unsplash.com/premium_photo-1738935667717-75777a3aaf71?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NXx8fGVufDB8fHx8fA%3D%3D" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                    <div class="col-4 p-1">
+                        <div class="position-relative" style="height: 0; padding-bottom: 100%; overflow: hidden;">
+                            <img src="https://plus.unsplash.com/premium_photo-1676838268294-81548389a7fc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1OHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Imagen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="list-view">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-5 mx-auto mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Imagen chulísima sin derechos de autor</h5>
+                                <p class="text-muted">20/02</p>
+                            </div>
+                        </div>
+                        <img src="https://plus.unsplash.com/premium_photo-1736165168647-e216dcd23720?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8" class="card-img-top" alt="Imagen">
+                        <div class="card-body">
+                            <strong>125 Likes</strong>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra justo at metus commodo, sit amet viverra mauris blandit. Ut ultrices est eu eleifend congue. Nam efficitur ex sit amet ipsum laoreet, ut semper augue porta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-12 col-md-8 col-lg-5 mx-auto mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Imagen chulísima sin derechos de autor</h5>
+                                <p class="text-muted">18/02</p>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1739536176048-caa7190dba66?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" class="card-img-top" alt="Imagen">
+                        <div class="card-body">
+                            <strong>138 Likes</strong>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra justo at metus commodo, sit amet viverra mauris blandit. Ut ultrices est eu eleifend congue. Nam efficitur ex sit amet ipsum laoreet, ut semper augue porta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-12 col-md-8 col-lg-5 mx-auto mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Imagen chulísima sin derechos de autor</h5>
+                                <p class="text-muted">18/02</p>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1739793669641-e5f4eddf6eab?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8" class="card-img-top" alt="Imagen">
+                        <div class="card-body">
+                            <strong>121 Likes</strong>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra justo at metus commodo, sit amet viverra mauris blandit. Ut ultrices est eu eleifend congue. Nam efficitur ex sit amet ipsum laoreet, ut semper augue porta.</p>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="modal-1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-1Label">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Caption:</p>
+                    <div class="input-group">
+                        <textarea class="form-control" placeholder="Add the caption of your post here"></textarea>
+                      </div>
+                      <br>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary btn-light"><i class="fa-solid fa-camera"></i></button>
+                        <button type="button" class="btn btn-outline-secondary btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
